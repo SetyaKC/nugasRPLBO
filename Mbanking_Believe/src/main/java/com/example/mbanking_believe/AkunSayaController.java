@@ -39,4 +39,10 @@ public class AkunSayaController {
         m.changeScene("layanan-lain.fxml");
     }
 
+    private Button buttonBack;
+
+    public void toBack(ActionEvent event) throws IOException {
+        m.changeScene("beranda.fxml");
+    }
+
 }

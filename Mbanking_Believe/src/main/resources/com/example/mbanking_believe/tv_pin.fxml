@@ -11,30 +11,33 @@
 
 <AnchorPane prefHeight="550.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.BerandaController">
    <children>
-      <AnchorPane layoutX="5.0" prefHeight="550.0" prefWidth="320.0">
+      <AnchorPane id="saldo-bg" prefHeight="550.0" prefWidth="320.0" stylesheets="@gambar/hello.css">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="5.0" layoutY="20.0" prefHeight="42.0" prefWidth="311.0" text="PIN">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </Label>
-            <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="10.0" layoutY="23.0">
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="14.0" layoutY="12.0">
                <image>
-                  <Image url="@gambar/%5Dkiri.png" />
+                  <Image url="@gambar/arrow-left-s-line.png" />
                </image>
             </ImageView>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="66.0" layoutY="148.0" prefHeight="22.0" prefWidth="181.0" text="Masukkan PIN">
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="69.0" layoutY="176.0" prefHeight="22.0" prefWidth="181.0" text="Masukkan PIN" textFill="#282b45">
                <font>
-                  <Font size="16.0" />
+                  <Font name="System Bold" size="16.0" />
                </font>
             </Label>
-            <PasswordField alignment="CENTER" layoutX="60.0" layoutY="192.0" prefHeight="54.0" prefWidth="201.0" text="20045" />
-            <Button fx:id="tvbuk" layoutX="129.0" layoutY="275.0" mnemonicParsing="false" onAction="#tvbuk" prefHeight="25.0" prefWidth="63.0" text="SELESAI" />
-            <Button fx:id="lek" layoutX="-1.0" layoutY="19.0" mnemonicParsing="false" onAction="#lek" prefHeight="42.0" prefWidth="63.0" style="-fx-background-color: transparant;">
+            <PasswordField alignment="CENTER" layoutX="59.0" layoutY="219.0" prefHeight="42.0" prefWidth="201.0" text="20045" />
+            <Button id="button-regis" fx:id="tvbuk" layoutX="115.0" layoutY="302.0" mnemonicParsing="false" onAction="#tvbuk" prefHeight="25.0" prefWidth="89.0" stylesheets="@gambar/hello.css" text="SELESAI" textFill="#ede7e7">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="lek" layoutX="4.0" layoutY="3.0" mnemonicParsing="false" onAction="#lek" prefHeight="42.0" prefWidth="63.0" style="-fx-background-color: transparant;">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
+            <Label layoutX="144.0" layoutY="14.0" text="PIN" textFill="#124122">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </children>

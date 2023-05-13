@@ -8,25 +8,19 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Box?>
-<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="550.0" prefWidth="320.0" style="-fx-background-color: transparant;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.BerandaController">
+<AnchorPane id="saldo-bg" prefHeight="550.0" prefWidth="320.0" stylesheets="@gambar/hello.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.BerandaController">
     <children>
-        <Label layoutX="107.0" layoutY="14.0" prefHeight="36.0" prefWidth="131.0" text="Transfer">
-            <font>
-                <Font name="System Bold" size="25.0" />
-            </font>
-        </Label>
-        <Line endX="153.33331298828125" layoutX="137.0" layoutY="58.0" startX="-108.0" />
-        <Box depth="100" height="250.0" layoutX="100.0" layoutY="238.0" width="250.0" />
-        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="18.0" layoutY="20.0">
+        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="14.0" layoutY="12.0">
             <image>
-                <Image url="@gambar/%5Dkiri.png" />
+                <Image url="@gambar/arrow-left-s-line.png" />
             </image>
         </ImageView>
-        <Label layoutX="29.0" layoutY="119.0" text="Pilih Jenis Transfer" />
+        <Label layoutX="22.0" layoutY="124.0" text="Pilih Jenis Transfer" textFill="#282b45">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
         <ImageView fitHeight="76.0" fitWidth="78.0" layoutX="191.0" layoutY="192.0">
             <image>
                 <Image url="@gambar/antar.png" />
@@ -37,8 +31,14 @@
                 <Image url="@gambar/back.png" />
             </image>
         </ImageView>
-        <Label layoutX="43.0" layoutY="275.0" text="Sesama Bank" />
-        <Label layoutX="201.0" layoutY="275.0" text="Antar Bank" />
+        <Label layoutX="43.0" layoutY="275.0" text="Sesama Bank" textFill="#282b45">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <Label layoutX="201.0" layoutY="275.0" text="Antar Bank" textFill="#282b45">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
         <Button fx:id="back_pay" layoutX="7.0" layoutY="9.0" mnemonicParsing="false" onAction="#back_pay" prefHeight="44.0" prefWidth="66.0" style="-fx-background-color: transaparant;">
             <cursor>
                 <Cursor fx:constant="HAND" />
@@ -57,6 +57,11 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
+      <Label layoutX="127.0" layoutY="14.0" text="Transfer" textFill="#124122">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
     </children>
     <cursor>
         <Cursor fx:constant="HAND" />

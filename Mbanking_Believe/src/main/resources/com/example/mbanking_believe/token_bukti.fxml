@@ -5,47 +5,72 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="550.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.BerandaController">
    <children>
-      <AnchorPane layoutX="7.0" prefHeight="550.0" prefWidth="320.0">
+      <AnchorPane id="saldo-bg" prefHeight="550.0" prefWidth="320.0" stylesheets="@gambar/hello.css">
          <children>
-            <Line endX="100.0" layoutX="-10.0" layoutY="1.0" startX="-100.0" />
-            <Button fx:id="ber" layoutX="23.0" layoutY="459.0" mnemonicParsing="false" onAction="#ber" prefHeight="25.0" prefWidth="275.0" text="Kembali Ke Beranda" />
-            <Label layoutX="9.0" layoutY="230.0">
+            <Button id="button-regis" fx:id="ber" layoutX="23.0" layoutY="459.0" mnemonicParsing="false" onAction="#ber" prefHeight="25.0" prefWidth="275.0" stylesheets="@gambar/hello.css" text="Kembali Ke Beranda" textFill="#cad6db">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Label layoutX="11.0" layoutY="246.0">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <ImageView fitHeight="36.0" fitWidth="68.0" layoutY="15.0">
+            <ImageView fitHeight="102.0" fitWidth="109.0" layoutX="111.0" layoutY="-22.0">
                <image>
-                  <Image url="@../../../../../../gambar/logo.png" />
+                  <Image url="@gambar/logo.png" />
                </image>
             </ImageView>
-            <Label layoutX="94.0" layoutY="20.0" text="Transaksi Berhasil">
+            <Label layoutX="92.0" layoutY="62.0" text="Transaksi Berhasil" textFill="#215e35">
                <font>
-                  <Font size="17.0" />
+                  <Font name="System Bold" size="17.0" />
                </font>
             </Label>
-            <Label layoutX="14.0" layoutY="138.0" text="Nomor ID Pelanggan" />
-            <Label layoutX="14.0" layoutY="165.0" text="Nama" />
-            <Label layoutX="14.0" layoutY="195.0" text="TarifDaya" />
-            <Label layoutX="14.0" layoutY="222.0" text="Nomor REF" />
-            <Label layoutX="14.0" layoutY="253.0" text="Nomor Rekening" />
-            <Label layoutX="14.0" layoutY="280.0" text="Nominal" />
-            <Label layoutX="14.0" layoutY="312.0" text="Biaya Admin" />
-            <Label layoutX="14.0" layoutY="339.0" text="Total" />
-            <Label alignment="BOTTOM_RIGHT" contentDisplay="CENTER" layoutX="204.0" layoutY="138.0" text="001" />
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="204.0" layoutY="165.0" text="Setya Pamungkas" />
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="204.0" layoutY="195.0" text="Rp0" />
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="204.0" layoutY="222.0" text="888541053197" />
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="204.0" layoutY="253.0" text="1223456" />
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="204.0" layoutY="280.0" text="Rp0" />
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="204.0" layoutY="312.0" text="Rp0" />
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="204.0" layoutY="339.0" text="Rp0" />
-            <Label layoutX="71.0" layoutY="51.0" text="STRUK PEMBELIAN TOKEN LISTRIK" />
+            <Label layoutX="14.0" layoutY="138.0" text="Nomor ID Pelanggan" textFill="#282b45">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="16.0" layoutY="170.0" text="Nama" textFill="#282b45">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="16.0" layoutY="205.0" text="TarifDaya" textFill="#282b45">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="16.0" layoutY="238.0" text="Nomor REF" textFill="#282b45">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="15.0" layoutY="271.0" text="Nomor Rekening" textFill="#282b45">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="16.0" layoutY="303.0" text="Nominal" textFill="#282b45">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="16.0" layoutY="335.0" text="Biaya Admin" textFill="#282b45">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="16.0" layoutY="368.0" text="Total" textFill="#282b45">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label alignment="BOTTOM_RIGHT" contentDisplay="CENTER" layoutX="186.0" layoutY="137.0" text="001" textFill="#282b45" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="188.0" layoutY="169.0" text="Setya Pamungkas" textFill="#282b45" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="188.0" layoutY="204.0" text="Rp0" textFill="#282b45" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="188.0" layoutY="237.0" text="888541053197" textFill="#282b45" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="187.0" layoutY="270.0" text="1223456" textFill="#282b45" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="188.0" layoutY="302.0" text="Rp0" textFill="#282b45" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="188.0" layoutY="334.0" text="Rp0" textFill="#282b45" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="188.0" layoutY="367.0" text="Rp0" textFill="#282b45" />
+            <Label layoutX="68.0" layoutY="89.0" text="STRUK PEMBELIAN TOKEN LISTRIK" textFill="#354c41" />
          </children>
       </AnchorPane>
    </children>

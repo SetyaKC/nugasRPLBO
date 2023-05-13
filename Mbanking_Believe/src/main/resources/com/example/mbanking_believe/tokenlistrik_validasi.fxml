@@ -7,46 +7,80 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Box?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="550.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.BerandaController">
+<AnchorPane id="saldo-bg" prefHeight="550.0" prefWidth="320.0" stylesheets="@gambar/hello.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.BerandaController">
    <children>
-      <Label contentDisplay="CENTER" layoutX="122.0" layoutY="17.0" prefHeight="36.0" prefWidth="95.0" text="Validasi" textOverrun="CENTER_ELLIPSIS">
-         <font>
-            <Font name="System Bold" size="25.0" />
-         </font>
-      </Label>
-      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="18.0" layoutY="20.0">
+      <Pane id="validation" layoutX="22.0" layoutY="98.0" prefHeight="301.0" prefWidth="271.0" stylesheets="@gambar/hello.css">
+         <children>
+            <Line endX="156.33334350585938" layoutX="108.0" layoutY="69.0" startX="-100.33331298828125" stroke="#5a789d" />
+            <Label layoutX="17.0" layoutY="115.0" text="Nominal" textFill="#0b0648">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="234.0" layoutY="115.0" text="Rp0" textFill="#0b0648" />
+            <Label layoutX="17.0" layoutY="145.0" text="Biaya Admin" textFill="#0b0648">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="178.0" text="Total" textFill="#0b0648">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="208.0" text="Nomor Rekening" textFill="#0b0648">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="234.0" layoutY="144.0" text="Rp0" textFill="#0b0648" />
+            <Label layoutX="234.0" layoutY="177.0" text="Rp0" textFill="#0b0648" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="14.0" layoutY="12.0">
          <image>
-            <Image url="@gambar/%5Dkiri.png" />
+            <Image url="@gambar/arrow-left-s-line.png" />
          </image>
       </ImageView>
-      <Line endX="153.33331298828125" layoutX="137.0" layoutY="65.0" startX="-108.0" strokeWidth="2.0" />
-      <Box depth="100" height="300.0" layoutX="160.0" layoutY="249.0" width="260.0" />
-      <Line endX="142.33331298828125" layoutX="137.0" layoutY="172.0" startX="-100.33331298828125" stroke="#797878" />
       <PasswordField layoutX="156.0" layoutY="341.0" prefHeight="25.0" prefWidth="122.0" text="*******" />
-      <Label layoutX="37.0" layoutY="116.0" text="Nomor Meter" />
-      <Label layoutX="41.0" layoutY="305.0" text="Nomor Rekening" />
-      <Label layoutX="39.0" layoutY="142.0" text="Nama" />
-      <Label layoutX="39.0" layoutY="182.0" text="TarifDaya" />
-      <Label layoutX="204.0" layoutY="116.0" text="Nomor Meter" textFill="#a8a5a5" />
-      <Label layoutX="40.0" layoutY="232.0" text="Biaya Admin" />
-      <Label layoutX="38.0" layoutY="345.0" text="Password Transaksi" />
-      <Label layoutX="41.0" layoutY="208.0" text="Nominal" />
-      <Label layoutX="217.0" layoutY="305.0" text="************" textFill="#a8a5a5" />
-      <Label layoutX="254.0" layoutY="232.0" text="Rp0" textFill="#a8a5a5" />
-      <Label layoutX="254.0" layoutY="208.0" text="Rp0" textFill="#a8a5a5" />
-      <Label layoutX="217.0" layoutY="190.0" text="PT.*********" textFill="#a8a5a5" />
-      <Label layoutX="217.0" layoutY="142.0" text="PT.*********" textFill="#a8a5a5" />
-      <Label layoutX="254.0" layoutY="266.0" text="Rp0" />
-      <Label layoutX="38.0" layoutY="267.0" text="Total" />
-      <Button fx:id="nx" layoutX="20.0" layoutY="484.0" mnemonicParsing="false" onAction="#nx" prefHeight="25.0" prefWidth="279.0" text="Selanjutnya" />
-      <Button fx:id="bal" layoutX="13.0" layoutY="23.0" mnemonicParsing="false" onAction="#bal" prefHeight="25.0" prefWidth="46.0" style="-fx-background-color: transparant;">
+      <Label layoutX="37.0" layoutY="116.0" text="Nomor Meter" textFill="#0b0648">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="39.0" layoutY="142.0" text="Nama" textFill="#0b0648">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="182.0" text="TarifDaya" textFill="#0b0648">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="204.0" layoutY="116.0" text="Nomor Meter" textFill="#0b0648" />
+      <Label layoutX="38.0" layoutY="345.0" text="Password Transaksi" textFill="#0b0648">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="217.0" layoutY="305.0" text="************" textFill="#0b0648" />
+      <Label layoutX="217.0" layoutY="190.0" text="PT.*********" textFill="#0b0648" />
+      <Label layoutX="217.0" layoutY="142.0" text="PT.*********" textFill="#0b0648" />
+      <Button id="button-regis" fx:id="nx" layoutX="20.0" layoutY="484.0" mnemonicParsing="false" onAction="#nx" prefHeight="25.0" prefWidth="279.0" stylesheets="@gambar/hello.css" text="Selanjutnya" textFill="#f6eeee">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="bal" layoutX="13.0" layoutY="11.0" mnemonicParsing="false" onAction="#bal" prefHeight="25.0" prefWidth="46.0" style="-fx-background-color: transparant;">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
+      <Label layoutX="131.0" layoutY="14.0" text="Validasi" textFill="#124122">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

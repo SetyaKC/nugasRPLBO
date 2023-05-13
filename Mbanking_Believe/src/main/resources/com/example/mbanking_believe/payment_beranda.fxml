@@ -8,19 +8,10 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Box?>
-<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="550.0" prefWidth="320.0" style="-fx-background-color: transparant;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.BerandaController">
+<AnchorPane id="saldo-bg" prefHeight="550.0" prefWidth="320.0" stylesheets="@gambar/hello.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.BerandaController">
    <children>
-      <Label layoutX="107.0" layoutY="14.0" prefHeight="36.0" prefWidth="131.0" text="Payment">
-         <font>
-            <Font name="System Bold" size="25.0" />
-         </font>
-      </Label>
-      <Line endX="153.33331298828125" layoutX="137.0" layoutY="58.0" startX="-108.0" />
-      <Box depth="100" height="250.0" layoutX="160.0" layoutY="275.0" width="250.0" />
       <ImageView fitHeight="36.0" fitWidth="30.0" layoutX="78.0" layoutY="205.0">
          <image>
             <Image url="@gambar/lightbulb-flash-fill.png" />
@@ -31,26 +22,43 @@
             <Image url="@gambar/tv-fill.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="18.0" layoutY="20.0">
+      <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="14.0" layoutY="12.0">
          <image>
-            <Image url="@gambar/%5Dkiri.png" />
+            <Image url="@gambar/arrow-left-s-line.png" />
          </image>
       </ImageView>
-      <Label layoutX="29.0" layoutY="119.0" text="Pilih Jenis Pembelian" />
-      <Label layoutX="54.0" layoutY="248.0" text="Token Listrik" />
-      <Label layoutX="197.0" layoutY="266.0" text="Voucher TV" />
-      <Label layoutX="191.0" layoutY="248.0" text="Berlangganan" />
-      <Button fx:id="paylist" layoutX="22.0" layoutY="186.0" mnemonicParsing="false" onAction="#paylist" prefHeight="125.0" prefWidth="142.0" style="-fx-background-color: transparant;">
+      <Label layoutX="29.0" layoutY="119.0" text="Pilih Jenis Pembelian" textFill="#282b45">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="58.0" layoutY="257.0" text="Token Listrik" textFill="#282b45">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="196.0" layoutY="273.0" text="Voucher TV" textFill="#282b45">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="190.0" layoutY="255.0" text="Berlangganan" textFill="#282b45">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="paylist" layoutX="10.0" layoutY="189.0" mnemonicParsing="false" onAction="#paylist" prefHeight="125.0" prefWidth="142.0" style="-fx-background-color: transparant;">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="tv" layoutX="161.0" layoutY="191.0" mnemonicParsing="false" onAction="#tv" prefHeight="114.0" prefWidth="142.0" style="-fx-background-color: transparant;" />
+      <Button fx:id="tv" layoutX="164.0" layoutY="187.0" mnemonicParsing="false" onAction="#tv" prefHeight="114.0" prefWidth="142.0" style="-fx-background-color: transparant;" />
       <Button fx:id="balek" layoutX="7.0" layoutY="2.0" mnemonicParsing="false" onAction="#balek" prefHeight="76.0" prefWidth="93.0" style="-fx-background-color: transparant;">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
+      <Label layoutX="125.0" layoutY="14.0" text="Payment" textFill="#124122">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
    </children>
    <cursor>
       <Cursor fx:constant="HAND" />

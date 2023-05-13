@@ -16,7 +16,7 @@
             <Image url="@gambar/arrow-left-s-line.png" />
          </image>
       </ImageView>
-      <Label layoutX="117.0" layoutY="14.0" text="Akun Saya">
+      <Label layoutX="117.0" layoutY="14.0" text="Akun Saya" textFill="#124122">
          <font>
             <Font name="System Bold" size="14.0" />
          </font></Label>
@@ -98,6 +98,11 @@
          </cursor>
       </Button>
       <Button fx:id="buttonLayanan" layoutX="171.0" layoutY="393.0" mnemonicParsing="false" onAction="#toLayanan" prefHeight="101.0" prefWidth="93.0" style="-fx-background-color: transparant;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="buttonBack" layoutX="17.0" layoutY="10.0" mnemonicParsing="false" onAction="#toBack" prefHeight="9.0" prefWidth="24.0" style="-fx-background-color: transparant;">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>

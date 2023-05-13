@@ -6,20 +6,27 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.HelloController">
+<AnchorPane id="saldo-bg" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="320.0" stylesheets="@gambar/hello.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.HelloController">
    <children>
-      <Label layoutX="85.0" layoutY="310.0" text="Melayani Kepercayaan Anda" />
-      <Label layoutX="213.0" layoutY="511.0" text="Selanjutnya --&gt;" />
-      <ImageView fitHeight="180.0" fitWidth="250.0" layoutX="35.0" layoutY="107.0">
-         <image>
-            <Image url="@gambar/logo.png" />
-         </image>
-      </ImageView>
-      <Button fx:id="buttonNext" layoutX="187.0" layoutY="507.0" mnemonicParsing="false" onAction="#toLogin" prefHeight="25.0" prefWidth="124.0" style="-fx-background-color: transparant;">
+      <Label layoutX="188.0" layoutY="507.0" text="Selanjutnya --&gt;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Button fx:id="buttonNext" layoutX="165.0" layoutY="504.0" mnemonicParsing="false" onAction="#toLogin" prefHeight="25.0" prefWidth="137.0" style="-fx-background-color: transparant;">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
+      <ImageView fitHeight="330.0" fitWidth="312.0" layoutX="14.0" layoutY="28.0">
+         <image>
+            <Image url="@gambar/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="42.0" layoutY="238.0" prefHeight="17.0" prefWidth="165.0" text="Siap Melayani Kepercayaan Anda" textFill="#2e7051">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font></Label>
    </children>
 </AnchorPane>

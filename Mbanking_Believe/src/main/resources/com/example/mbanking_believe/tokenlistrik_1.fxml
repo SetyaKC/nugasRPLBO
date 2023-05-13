@@ -7,35 +7,48 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="550.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.BerandaController">
+<AnchorPane id="saldo-bg" prefHeight="550.0" prefWidth="320.0" stylesheets="@gambar/hello.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.BerandaController">
    <children>
-      <Label layoutX="100.0" layoutY="14.0" prefHeight="36.0" prefWidth="155.0" text="Token Listrik">
-         <font>
-            <Font name="System Bold" size="25.0" />
-         </font>
-      </Label>
-      <Line endX="153.33331298828125" layoutX="147.0" layoutY="68.0" startX="-108.0" strokeWidth="2.0" />
-      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="18.0" layoutY="20.0">
+      <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="14.0" layoutY="12.0">
          <image>
-            <Image url="@gambar/%5Dkiri.png" />
+            <Image url="@gambar/arrow-left-s-line.png" />
          </image>
       </ImageView>
       <TextField layoutX="22.0" layoutY="141.0" prefHeight="25.0" prefWidth="279.0" promptText="Nomor Rekening Nasabah" />
-      <TextField layoutX="162.0" layoutY="187.0" prefHeight="25.0" prefWidth="137.0" promptText="Jumlah Saldo Nasabah" />
+      <TextField layoutX="162.0" layoutY="196.0" prefHeight="25.0" prefWidth="137.0" promptText="Jumlah Saldo Nasabah" />
       <TextField layoutX="20.0" layoutY="275.0" prefHeight="25.0" prefWidth="279.0" promptText="ID Pelanggan" />
-      <Label layoutX="19.0" layoutY="116.0" text="Rekening Debit  " />
-      <Label layoutX="19.0" layoutY="191.0" text="Saldo" />
-      <Label layoutX="18.0" layoutY="250.0" text="ID Pelanggan" />
-      <Label layoutX="18.0" layoutY="330.0" text="Nominal" />
+      <Label layoutX="24.0" layoutY="115.0" text="Rekening Debit  " textFill="#121f4e">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="27.0" layoutY="200.0" text="Saldo" textFill="#121f4e">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="25.0" layoutY="254.0" text="ID Pelanggan" textFill="#121f4e">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="23.0" layoutY="333.0" text="Nominal" textFill="#121f4e">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
       <TextField layoutX="20.0" layoutY="356.0" prefHeight="25.0" prefWidth="279.0" promptText="ID Pelanggan" />
-      <Button fx:id="lj" layoutX="15.0" layoutY="499.0" mnemonicParsing="false" onAction="#lj" prefHeight="25.0" prefWidth="290.0" text="Selanjutnya" />
-      <Button fx:id="bk" layoutX="12.0" layoutY="23.0" mnemonicParsing="false" onAction="#bk" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: transparant;">
+      <Button id="button-regis" fx:id="lj" layoutX="15.0" layoutY="499.0" mnemonicParsing="false" onAction="#lj" prefHeight="25.0" prefWidth="290.0" stylesheets="@gambar/hello.css" text="Selanjutnya" textFill="#f4dbdb">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="bk" layoutX="8.0" layoutY="11.0" mnemonicParsing="false" onAction="#bk" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: transparant;">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
+      <Label layoutX="117.0" layoutY="14.0" text="Token Listrik" textFill="#124122">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

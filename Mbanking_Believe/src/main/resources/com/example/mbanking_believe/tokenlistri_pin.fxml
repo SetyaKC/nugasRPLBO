@@ -11,30 +11,30 @@
 
 <AnchorPane prefHeight="550.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.BerandaController">
    <children>
-      <AnchorPane layoutX="5.0" prefHeight="550.0" prefWidth="320.0">
+      <AnchorPane id="saldo-bg" prefHeight="550.0" prefWidth="320.0" stylesheets="@gambar/hello.css">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="5.0" layoutY="20.0" prefHeight="42.0" prefWidth="311.0" text="PIN">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </Label>
-            <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="10.0" layoutY="23.0">
+            <PasswordField alignment="CENTER" layoutX="60.0" layoutY="192.0" prefHeight="54.0" prefWidth="201.0" text="20045" />
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="14.0" layoutY="12.0">
                <image>
-                  <Image url="@gambar/%5Dkiri.png" />
+                  <Image url="@gambar/arrow-left-s-line.png" />
                </image>
             </ImageView>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="66.0" layoutY="148.0" prefHeight="22.0" prefWidth="181.0" text="Masukkan PIN">
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="69.0" layoutY="157.0" prefHeight="22.0" prefWidth="181.0" text="Masukkan PIN" textFill="#102c3c">
                <font>
-                  <Font size="16.0" />
+                  <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <PasswordField alignment="CENTER" layoutX="60.0" layoutY="192.0" prefHeight="54.0" prefWidth="201.0" text="20045" />
-            <Button fx:id="ss" layoutX="129.0" layoutY="275.0" mnemonicParsing="false" onAction="#ss" prefHeight="25.0" prefWidth="63.0" text="SELESAI" />
-            <Button fx:id="lik" layoutX="-1.0" layoutY="19.0" mnemonicParsing="false" onAction="#lik" prefHeight="42.0" prefWidth="63.0" style="-fx-background-color: transparant;">
+            <Button id="button-regis" fx:id="ss" layoutX="114.0" layoutY="318.0" mnemonicParsing="false" onAction="#ss" prefHeight="25.0" prefWidth="87.0" stylesheets="@gambar/hello.css" text="SELESAI" textFill="#f2eaea" />
+            <Button fx:id="lik" layoutX="2.0" layoutY="7.0" mnemonicParsing="false" onAction="#lik" prefHeight="21.0" prefWidth="36.0" style="-fx-background-color: transparant;">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
+            <Label layoutX="146.0" layoutY="14.0" text="PIN" textFill="#124122">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </children>

@@ -6,52 +6,73 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.BerandaController">
+<AnchorPane id="saldo-bg" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="320.0" stylesheets="@gambar/hello.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.BerandaController">
    <children>
-      <Label layoutX="207.0" layoutY="144.0" text="Selamat Datang" />
-      <Label layoutX="44.0" layoutY="284.0" text="Akun Saya" />
-      <Label layoutX="143.0" layoutY="392.0" text="Transfer" />
-      <ImageView layoutX="59.0" layoutY="256.0">
-         <image>
-            <Image url="@gambar/account-circle-fill.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="27.0" fitWidth="31.0" layoutX="149.0" layoutY="357.0">
-         <image>
-            <Image url="@gambar/transfer.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="59.0" fitWidth="130.0" layoutX="6.0" layoutY="14.0">
+      <ImageView fitHeight="217.0" fitWidth="227.0" layoutX="6.0" layoutY="-29.0">
          <image>
             <Image url="@gambar/logo.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="27.0" fitWidth="17.0" layoutX="284.0" layoutY="21.0" />
-      <ImageView fitHeight="24.0" fitWidth="17.0" layoutX="284.0" layoutY="23.0" />
-      <Label layoutX="265.0" layoutY="26.0" text="Logout" />
-      <Button fx:id="logout" layoutX="239.0" layoutY="22.0" mnemonicParsing="false" onAction="#toreg" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: transparant;">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
-      <ImageView layoutX="238.0" layoutY="256.0">
+      <Label layoutX="27.0" layoutY="122.0" text="Selamat Datang" textFill="#355544">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="63.0" layoutY="294.0" text="Akun Saya" textFill="#2d4060">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="137.0" layoutY="428.0" text="Transfer" textFill="#2d4060">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="69.0" layoutY="233.0">
+         <image>
+            <Image url="@gambar/account-circle-fill.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="138.0" layoutY="377.0">
+         <image>
+            <Image url="@gambar/transfer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="17.0" layoutX="280.0" layoutY="17.0" />
+      <ImageView fitHeight="24.0" fitWidth="17.0" layoutX="280.0" layoutY="19.0" />
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="204.0" layoutY="233.0">
          <image>
             <Image url="@gambar/money-cny-circle-line.png" />
          </image>
       </ImageView>
-      <Label layoutX="227.0" layoutY="284.0" text="Payment" />
-      <Button fx:id="to" layoutX="212.0" layoutY="242.0" mnemonicParsing="false" onAction="#topay" prefHeight="67.0" prefWidth="75.0" style="-fx-background-color: transparant;">
+      <Label layoutX="201.0" layoutY="293.0" text="Payment" textFill="#2d4060">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="to" layoutX="181.0" layoutY="222.0" mnemonicParsing="false" onAction="#topay" prefHeight="101.0" prefWidth="85.0" style="-fx-background-color: transparant;">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="totf" layoutX="123.0" layoutY="358.0" mnemonicParsing="false" onAction="#totf" prefHeight="67.0" prefWidth="85.0" style="-fx-background-color: transparant;">
+      <Button fx:id="totf" layoutX="120.0" layoutY="369.0" mnemonicParsing="false" onAction="#totf" prefHeight="83.0" prefWidth="85.0" style="-fx-background-color: transparant;">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="akun" layoutX="24.0" layoutY="237.0" mnemonicParsing="false" onAction="#akunsaya" prefHeight="94.0" prefWidth="96.0" style="-fx-background-color: transparant;">
+      <Button fx:id="akun" layoutX="45.0" layoutY="224.0" mnemonicParsing="false" onAction="#akunsaya" prefHeight="94.0" prefWidth="96.0" style="-fx-background-color: transparant;" textFill="#1f2948">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="13.0" fitWidth="13.0" layoutX="290.0" layoutY="18.0">
+         <image>
+            <Image url="@gambar/logout-circle-r-line.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="248.0" layoutY="17.0" text="Logout" textFill="#15482d">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font></Label>
+      <Button fx:id="logout" layoutX="214.0" layoutY="14.0" mnemonicParsing="false" onAction="#toreg" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: transparant;" textFill="#4fa17c">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>

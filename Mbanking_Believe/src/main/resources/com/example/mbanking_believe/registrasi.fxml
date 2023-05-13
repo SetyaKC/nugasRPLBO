@@ -5,19 +5,29 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="550.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.registrasicontroller">
    <children>
-      <AnchorPane layoutX="5.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="320.0">
+      <AnchorPane id="saldo-bg" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="320.0" stylesheets="@gambar/hello.css">
          <children>
-            <ImageView fitHeight="153.0" fitWidth="254.0" layoutX="33.0" layoutY="85.0">
+            <ImageView fitHeight="263.0" fitWidth="286.0" layoutX="23.0" layoutY="25.0">
                <image>
                   <Image url="@gambar/logo.png" />
                </image>
             </ImageView>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="232.0" prefHeight="36.0" prefWidth="300.0" text="Melayani Kepercayaan Anda" textAlignment="CENTER" />
-            <Button fx:id="buttonLogin" layoutX="80.0" layoutY="346.0" mnemonicParsing="false" onAction="#toLog" prefHeight="36.0" prefWidth="160.0" text="LOGIN" />
-            <Button fx:id="buttonreg" layoutX="80.0" layoutY="408.0" mnemonicParsing="false" onAction="#toReg" prefHeight="36.0" prefWidth="160.0" text="REGISTRASI" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="46.0" layoutY="186.0" prefHeight="36.0" prefWidth="166.0" text="Siap Melayani Kepercayaan Anda" textAlignment="CENTER" textFill="#326b48">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font></Label>
+            <Button id="button-regis" fx:id="buttonLogin" layoutX="77.0" layoutY="332.0" mnemonicParsing="false" onAction="#toLog" prefHeight="36.0" prefWidth="160.0" stylesheets="@gambar/hello.css" text="LOGIN" textFill="#e2e2e2">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button id="button-regis" fx:id="buttonreg" layoutX="76.0" layoutY="402.0" mnemonicParsing="false" onAction="#toReg" prefHeight="36.0" prefWidth="160.0" stylesheets="@gambar/hello.css" text="REGISTRASI" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
          </children>
       </AnchorPane>
    </children>

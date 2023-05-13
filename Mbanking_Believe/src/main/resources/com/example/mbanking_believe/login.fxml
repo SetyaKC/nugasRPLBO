@@ -8,22 +8,32 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="loginButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.LoginController" >
+<AnchorPane id="saldo-bg" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="320.0" stylesheets="@gambar/hello.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.LoginController">
     <children>
-        <Label layoutX="61.0" layoutY="248.0" text="Username" />
-        <Label layoutX="61.0" layoutY="318.0" text="Password" />
-        <TextField fx:id="usernameField" layoutX="61.0" layoutY="265.0" prefHeight="37.0" prefWidth="198.0" />
-        <PasswordField fx:id="passwordField" layoutX="61.0" layoutY="335.0" prefHeight="37.0" prefWidth="198.0" />
-        <Button fx:id="buttonlog" layoutX="129.0" layoutY="403.0" mnemonicParsing="false" onAction="#toBeranda" prefHeight="29.0" prefWidth="62.0" text="LOGIN">
+        <Label layoutX="60.0" layoutY="256.0" text="Username" textFill="#3a4077">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font></Label>
+        <Label layoutX="61.0" layoutY="341.0" text="Password" textFill="#3a4077">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font></Label>
+        <TextField fx:id="usernameField" layoutX="61.0" layoutY="275.0" prefHeight="37.0" prefWidth="198.0" />
+        <PasswordField fx:id="passwordField" layoutX="61.0" layoutY="358.0" prefHeight="37.0" prefWidth="198.0" />
+        <Button id="button-regis" fx:id="buttonlog" layoutX="117.0" layoutY="436.0" mnemonicParsing="false" onAction="#toBeranda" prefHeight="29.0" prefWidth="77.0" stylesheets="@gambar/hello.css" text="LOGIN" textFill="#fff8f8">
          <cursor>
             <Cursor fx:constant="HAND" />
-         </cursor></Button>
-      <ImageView fitHeight="105.0" fitWidth="225.0" layoutX="48.0" layoutY="81.0">
+         </cursor>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <ImageView fitHeight="257.0" fitWidth="252.0" layoutX="39.0" layoutY="16.0">
          <image>
             <Image url="@gambar/logo.png" />
          </image>
       </ImageView>
-      <Label fx:id="salah" alignment="CENTER" contentDisplay="CENTER" layoutX="5.0" layoutY="379.0" prefHeight="17.0" prefWidth="309.0" />
+      <Label fx:id="salah" alignment="CENTER" contentDisplay="CENTER" layoutX="5.0" layoutY="402.0" prefHeight="17.0" prefWidth="309.0" />
     </children>
 </AnchorPane>

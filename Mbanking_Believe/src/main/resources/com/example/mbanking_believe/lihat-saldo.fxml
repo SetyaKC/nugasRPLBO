@@ -10,22 +10,22 @@
 
 <AnchorPane id="saldo-bg" prefHeight="550.0" prefWidth="320.0" stylesheets="@gambar/hello.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.SaldoController">
    <children>
-      <ImageView layoutX="23.0" layoutY="17.0">
+      <ImageView layoutX="14.0" layoutY="12.0">
          <image>
             <Image url="@gambar/arrow-left-s-line.png" />
          </image>
       </ImageView>
-      <Label layoutX="105.0" layoutY="204.0" prefHeight="26.0" prefWidth="134.0" text="Rp. 5.000.000">
+      <Label layoutX="105.0" layoutY="204.0" prefHeight="26.0" prefWidth="134.0" text="Rp. 5.000.000" textFill="#3b3e5c">
          <font>
-            <Font size="17.0" />
+            <Font name="System Bold" size="17.0" />
          </font>
       </Label>
-      <Label layoutX="105.0" layoutY="153.0" prefHeight="26.0" prefWidth="134.0" text="Saldo Anda">
+      <Label layoutX="105.0" layoutY="153.0" prefHeight="26.0" prefWidth="134.0" text="Saldo Anda" textFill="#282b45">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="95.0" layoutY="15.0" prefHeight="26.0" prefWidth="134.0" text="Informasi Saldo">
+      <Label layoutX="95.0" layoutY="14.0" prefHeight="26.0" prefWidth="134.0" text="Informasi Saldo" textFill="#124122">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>

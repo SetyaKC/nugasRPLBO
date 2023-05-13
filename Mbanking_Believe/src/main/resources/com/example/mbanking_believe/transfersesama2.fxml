@@ -10,42 +10,38 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="550.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.BerandaController">
+<AnchorPane id="saldo-bg" prefHeight="550.0" prefWidth="320.0" stylesheets="@gambar/hello.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.BerandaController">
     <children>
-        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="9.0" layoutY="13.0" prefHeight="42.0" prefWidth="311.0" text="Validasi">
-            <font>
-                <Font size="20.0" />
-            </font>
-        </Label>
-        <Line endX="100.0" startX="-100.0" />
-        <Line endX="-80.0" layoutX="101.0" layoutY="54.0" startX="200.0" strokeWidth="2.0" />
-        <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="14.0" layoutY="16.0">
+        <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="14.0" layoutY="12.0">
             <image>
-                <Image url="@gambar/%5Dkiri.png" />
+                <Image url="@gambar/arrow-left-s-line.png" />
             </image>
         </ImageView>
-      <Line endX="-80.0" layoutX="100.0" layoutY="184.0" opacity="0.3" startX="200.0" />
-      <Line endX="-80.0" layoutX="100.0" layoutY="296.0" opacity="0.3" startX="200.0" />
-      <PasswordField layoutX="160.0" layoutY="389.0" prefHeight="25.0" prefWidth="135.0" text="12345" />
-      <Button fx:id="tf3" layoutX="23.0" layoutY="461.0" mnemonicParsing="false" onAction="#tf3" prefHeight="25.0" prefWidth="275.0" text="Selanjutnya" />
-      <Label layoutX="17.0" layoutY="92.0" text="Rekening Tujuan">
+      <Line endX="-80.0" layoutX="100.0" layoutY="184.0" opacity="0.3" startX="200.0" stroke="#0f6c79" />
+      <Line endX="-80.0" layoutX="100.0" layoutY="296.0" opacity="0.3" startX="200.0" stroke="#0f6c79" />
+      <PasswordField layoutX="175.0" layoutY="389.0" prefHeight="25.0" prefWidth="123.0" text="12345" />
+      <Button id="button-regis" fx:id="tf3" layoutX="25.0" layoutY="461.0" mnemonicParsing="false" onAction="#tf3" prefHeight="25.0" prefWidth="269.0" stylesheets="@gambar/hello.css" text="Selanjutnya" textFill="#e6e3e3">
          <font>
-            <Font size="14.0" />
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="17.0" layoutY="92.0" text="Rekening Tujuan" textFill="#282b45">
+         <font>
+            <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <Label layoutX="17.0" layoutY="120.0" text="Nama Penerima">
+      <Label layoutX="17.0" layoutY="120.0" text="Nama Penerima" textFill="#282b45">
          <font>
-            <Font size="14.0" />
+            <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <Label layoutX="17.0" layoutY="147.0" text="Bank Tujuan">
+      <Label layoutX="17.0" layoutY="147.0" text="Bank Tujuan" textFill="#282b45">
          <font>
-            <Font size="14.0" />
+            <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <Label layoutX="17.0" layoutY="201.0" text="Nama Pengirim">
+      <Label layoutX="17.0" layoutY="201.0" text="Nama Pengirim" textFill="#282b45">
          <font>
-            <Font size="14.0" />
+            <Font name="System Bold" size="13.0" />
          </font>
       </Label>
       <Label layoutX="19.0" layoutY="229.0">
@@ -55,46 +51,54 @@
       </Label>
       <Label layoutX="18.0" layoutY="230.0" text="Nominal">
          <font>
-            <Font size="14.0" />
+            <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <Label layoutX="17.0" layoutY="257.0" text="Biaya Admin">
+      <Label layoutX="17.0" layoutY="257.0" text="Biaya Admin" textFill="#282b45">
          <font>
-            <Font size="14.0" />
+            <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <Label layoutX="20.0" layoutY="317.0" text="Total">
+      <Label layoutX="20.0" layoutY="317.0" text="Total" textFill="#282b45">
          <font>
-            <Font size="14.0" />
+            <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <Label layoutX="20.0" layoutY="346.0" text="Nomor rekening">
+      <Label layoutX="20.0" layoutY="346.0" text="Nomor rekening" textFill="#282b45">
          <font>
-            <Font size="14.0" />
+            <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <Label layoutX="20.0" layoutY="392.0" text="Password Transaksi">
+      <Label layoutX="20.0" layoutY="392.0" text="Password Transaksi" textFill="#282b45">
          <font>
-            <Font size="14.0" />
+            <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <Label layoutX="165.0" layoutY="93.0" text="888541053197" textAlignment="RIGHT" />
-      <Label layoutX="165.0" layoutY="149.0" text="Believe" />
-      <Label layoutX="165.0" layoutY="122.0" text="Farel Pamungkas" />
-      <Label layoutX="165.0" layoutY="202.0" text="Setya Pamungkas" />
-      <Label layoutX="165.0" layoutY="258.0" text="Rp 0" />
-      <Label layoutX="165.0" layoutY="231.0" text="Rp 300000" />
-      <Label layoutX="165.0" layoutY="319.0" text="Rp 300000" />
-      <Label layoutX="165.0" layoutY="348.0" text="908555498123" />
-      <Label layoutX="20.0" layoutY="422.0" text="Keterangan">
+      <Label layoutX="175.0" layoutY="93.0" text="888541053197" textAlignment="RIGHT" textFill="#282b45" />
+      <Label layoutX="175.0" layoutY="149.0" text="Believe" textFill="#282b45" />
+      <Label layoutX="175.0" layoutY="122.0" text="Farel Pamungkas" textFill="#282b45" />
+      <Label layoutX="175.0" layoutY="202.0" text="Setya Pamungkas" textFill="#282b45" />
+      <Label layoutX="175.0" layoutY="258.0" text="Rp 0" textFill="#282b45" />
+      <Label layoutX="175.0" layoutY="231.0" text="Rp 300000" textFill="#282b45" />
+      <Label layoutX="175.0" layoutY="319.0" text="Rp 300000" textFill="#282b45" />
+      <Label layoutX="175.0" layoutY="348.0" text="908555498123" textFill="#282b45" />
+      <Label layoutX="20.0" layoutY="422.0" text="Keterangan" textFill="#282b45">
          <font>
-            <Font size="14.0" />
+            <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <Label layoutX="165.0" layoutY="423.0" text="sahh" />
-      <Button fx:id="tf1" layoutX="10.0" layoutY="21.0" mnemonicParsing="false" onAction="#tf1" prefHeight="25.0" prefWidth="53.0" style="-fx-background-color: transparant;">
+      <Label layoutX="175.0" layoutY="423.0" text="SAH" textFill="#282b45">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="tf1" layoutX="10.0" layoutY="11.0" mnemonicParsing="false" onAction="#tf1" prefHeight="35.0" prefWidth="37.0" style="-fx-background-color: transparant;">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
+      <Label layoutX="127.0" layoutY="14.0" text="Validasi" textFill="#124122">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
     </children>
 </AnchorPane>

@@ -9,3 +9,46 @@
 #saldo-bg{
     -fx-background-color: linear-gradient(to top,rgb(87, 132, 220),rgb(130, 181, 139));
 }
+
+#button-login{
+    -fx-background-color: rgb(58, 58, 120);
+}
+
+#button-login:hover{
+    -fx-background-color: rgb(73, 149, 168);
+}
+
+#first-bg{
+    -fx-background-color: linear-gradient(to bottom,darkblue,rgb(87, 132, 220),rgb(130, 181, 139));
+}
+
+#button-regis{
+    -fx-background-color: rgb(57, 93, 165);
+}
+
+
+#button-regis:hover{
+    -fx-background-color: rgb(136, 166, 224);
+}
+
+#validation{
+    -fx-background-color: transparant;
+    -fx-border-color: rgb(15, 15, 98);
+}
+
+#transfer-bank{
+    -fx-background-color: rgb(59, 117, 107);
+}
+
+#transfer-bank:hover{
+    -fx-background-color: rgb(140, 156, 153);
+}
+
+
+#pane{
+    -fx-background-color: rgb(37, 134, 167);
+}
+
+#transfer-click{
+    -fx-background-color: rgb(83, 201, 181);
+}

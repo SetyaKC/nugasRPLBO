@@ -7,49 +7,67 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Box?>
-<?import javafx.scene.shape.Line?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="550.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.BerandaController">
    <children>
-      <AnchorPane layoutX="2.0" prefHeight="550.0" prefWidth="320.0">
+      <AnchorPane id="saldo-bg" prefHeight="550.0" prefWidth="320.0" stylesheets="@gambar/hello.css">
          <children>
-            <Line endX="153.33331298828125" layoutX="152.0" layoutY="76.0" startX="-121.33332061767578" strokeWidth="2.0" />
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="56.0" layoutY="24.0" prefHeight="42.0" prefWidth="208.0" text="Transfer Sesama Bank">
+            <Pane id="pane" layoutX="25.0" layoutY="250.0" prefHeight="52.0" prefWidth="276.0" stylesheets="@gambar/hello.css">
+               <children>
+                  <Label layoutX="10.0" layoutY="28.0" prefHeight="20.0" prefWidth="246.0" text="Nomor Rekening - Jenis Transfer" textFill="#2c355e">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="31.0" layoutY="256.0" text="Penerima 2" textFill="#282b45">
                <font>
-                  <Font size="20.0" />
+                  <Font name="System Bold" size="11.0" />
                </font>
             </Label>
-            <Box depth="100" height="50.0" layoutX="165.0" layoutY="315.0" width="315.0" />
-            <Label layoutX="23.0" layoutY="295.0" text="Penerima 2">
+            <TextField layoutX="24.0" layoutY="113.0" prefHeight="25.0" prefWidth="282.0" />
+            <Label layoutX="18.0" layoutY="165.0" text="Saldo" textFill="#282b45">
                <font>
-                  <Font size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="22.0" layoutY="315.0" prefHeight="20.0" prefWidth="246.0" text="Nomor Rekening - Nama Pengiriman" textFill="#a8a8a8">
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TextField layoutX="147.0" layoutY="162.0" prefHeight="25.0" prefWidth="158.0" />
+            <Label layoutX="18.0" layoutY="229.0" text="Favorite" textFill="#282b45">
                <font>
-                  <Font size="14.0" />
-               </font>
-            </Label>
-            <TextField layoutX="15.0" layoutY="126.0" prefHeight="25.0" prefWidth="301.0" />
-            <Label layoutX="22.0" layoutY="218.0" text="Saldo" />
-            <TextField layoutX="154.0" layoutY="214.0" prefHeight="25.0" prefWidth="158.0" />
-            <Label layoutX="20.0" layoutY="261.0" text="Input Data" />
-            <TextField layoutX="5.0" layoutY="358.0" prefHeight="25.0" prefWidth="315.0" text="Nominal" />
-            <TextField layoutX="7.0" layoutY="401.0" prefHeight="25.0" prefWidth="311.0" text="Keterangan(Opsional)" />
-            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="15.0" layoutY="30.0">
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <TextField layoutX="33.0" layoutY="352.0" prefHeight="25.0" prefWidth="270.0" promptText="Nominal" />
+            <TextField layoutX="33.0" layoutY="393.0" prefHeight="25.0" prefWidth="270.0" promptText="Keterangan(Opsional)" />
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="14.0" layoutY="12.0">
                <image>
-                  <Image url="@gambar/%5Dkiri.png" />
+                  <Image url="@gambar/arrow-left-s-line.png" />
                </image>
             </ImageView>
-            <Button fx:id="fav1" layoutX="7.0" layoutY="30.0" mnemonicParsing="false" onAction="#fav1" prefHeight="30.0" prefWidth="52.0" style="-fx-background-color: transparant;">
+            <Button fx:id="fav1" layoutX="9.0" layoutY="10.0" mnemonicParsing="false" onAction="#fav1" prefHeight="30.0" prefWidth="52.0" style="-fx-background-color: transparant;">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <Label layoutX="33.0" layoutY="109.0" text="Rekening Debit" />
+            <Label layoutX="18.0" layoutY="88.0" text="Rekening Debit" textFill="#282b45">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="96.0" layoutY="14.0" text="Transfer sesama Bank" textFill="#124122">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="324.0" text="Input Data" textFill="#282b45">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
-      <Button fx:id="validasi" layoutX="20.0" layoutY="492.0" mnemonicParsing="false" onAction="#validasi" prefHeight="25.0" prefWidth="288.0" text="Selanjutnya" />
+      <Button id="button-regis" fx:id="validasi" layoutX="16.0" layoutY="492.0" mnemonicParsing="false" onAction="#validasi" prefHeight="25.0" prefWidth="288.0" stylesheets="@gambar/hello.css" text="Selanjutnya" textFill="#efecec">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
    </children>
 </AnchorPane>

@@ -10,13 +10,16 @@
 
 <AnchorPane id="saldo-bg" prefHeight="550.0" prefWidth="320.0" stylesheets="@gambar/hello.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.LayananLainController">
    <children>
-      <Label layoutX="115.0" layoutY="21.0" text="Layanan Lain">
+      <Label layoutX="115.0" layoutY="14.0" text="Layanan Lain" textFill="#124122">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="101.0" layoutY="119.0" text="Blokir Kartu" />
-      <ImageView layoutX="20.0" layoutY="20.0">
+      <Label layoutX="101.0" layoutY="119.0" text="Blokir Kartu" textFill="#282b45">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="14.0" layoutY="12.0">
          <image>
             <Image url="@gambar/arrow-left-s-line.png" />
          </image>
@@ -31,7 +34,7 @@
             <Image url="@gambar/arrow-left-s-line.png" />
          </image>
       </ImageView>
-      <Button fx:id="buttonBack" layoutX="22.0" layoutY="23.0" mnemonicParsing="false" onAction="#toBack" prefHeight="25.0" prefWidth="23.0" style="-fx-background-color: transparant;">
+      <Button fx:id="buttonBack" layoutX="18.0" layoutY="9.0" mnemonicParsing="false" onAction="#toBack" prefHeight="25.0" prefWidth="23.0" style="-fx-background-color: transparant;">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
