@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="loginButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.LoginController" >
+    <children>
+        <Label layoutX="61.0" layoutY="248.0" text="Username" />
+        <Label layoutX="61.0" layoutY="318.0" text="Password" />
+        <TextField fx:id="usernameField" layoutX="61.0" layoutY="265.0" prefHeight="37.0" prefWidth="198.0" />
+        <PasswordField fx:id="passwordField" layoutX="61.0" layoutY="335.0" prefHeight="37.0" prefWidth="198.0" />
+        <Button fx:id="buttonlog" layoutX="129.0" layoutY="403.0" mnemonicParsing="false" onAction="#toBeranda" prefHeight="29.0" prefWidth="62.0" text="LOGIN">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <ImageView fitHeight="105.0" fitWidth="225.0" layoutX="48.0" layoutY="81.0">
+         <image>
+            <Image url="@gambar/logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="salah" alignment="CENTER" contentDisplay="CENTER" layoutX="5.0" layoutY="379.0" prefHeight="17.0" prefWidth="309.0" />
+    </children>
+</AnchorPane>

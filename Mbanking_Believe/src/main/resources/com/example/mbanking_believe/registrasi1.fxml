@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.registrasicontroller">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="6.0" layoutY="13.0" prefHeight="42.0" prefWidth="311.0" text="REGISTRASI">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" startX="-100.0" />
+      <Line endX="-80.0" layoutX="101.0" layoutY="54.0" startX="200.0" strokeWidth="2.0" />
+      <ImageView fitHeight="25.0" fitWidth="26.0" layoutX="15.0" layoutY="22.0">
+         <image>
+            <Image url="@gambar/%5Dkiri.png" />
+         </image>
+      </ImageView>
+      <TextField layoutX="28.0" layoutY="110.0" prefHeight="25.0" prefWidth="272.0" promptText="NIK" />
+      <TextField layoutX="28.0" layoutY="225.0" prefHeight="25.0" prefWidth="272.0" promptText="Tanggal Lahir" />
+      <TextField layoutX="28.0" layoutY="149.0" prefHeight="25.0" prefWidth="272.0" promptText="Nama Lengkap" />
+      <TextField layoutX="28.0" layoutY="187.0" prefHeight="25.0" prefWidth="272.0" promptText="Tempat Lahir" />
+      <TextField layoutX="28.0" layoutY="263.0" prefHeight="25.0" prefWidth="272.0" promptText="Alamat" />
+      <TextField layoutX="28.0" layoutY="378.0" prefHeight="25.0" prefWidth="272.0" promptText="Nama Ibu Kandung" />
+      <TextField layoutX="28.0" layoutY="302.0" prefHeight="25.0" prefWidth="272.0" promptText="Nomor Telepon" />
+      <TextField layoutX="28.0" layoutY="340.0" prefHeight="25.0" prefWidth="272.0" promptText="Alamat Email" />
+      <Button fx:id="simpan" layoutX="217.0" layoutY="434.0" mnemonicParsing="false" onAction="#tosv" prefHeight="25.0" prefWidth="83.0" text="SIMPAN" />
+      <Button fx:id="back" layoutX="9.0" layoutY="22.0" mnemonicParsing="false" onAction="#toback" prefHeight="25.0" prefWidth="38.0" style="-fx-background-color: transparant;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

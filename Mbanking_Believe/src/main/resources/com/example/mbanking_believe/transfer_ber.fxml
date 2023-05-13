@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import com.gluonhq.charm.glisten.control.BottomNavigation?>-->
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Box?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="320.0" style="-fx-background-color: transparant;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.BerandaController">
+    <children>
+        <Label layoutX="107.0" layoutY="14.0" prefHeight="36.0" prefWidth="131.0" text="Transfer">
+            <font>
+                <Font name="System Bold" size="25.0" />
+            </font>
+        </Label>
+        <Line endX="153.33331298828125" layoutX="137.0" layoutY="58.0" startX="-108.0" />
+        <Box depth="100" height="250.0" layoutX="100.0" layoutY="238.0" width="250.0" />
+        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="18.0" layoutY="20.0">
+            <image>
+                <Image url="@gambar/%5Dkiri.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="29.0" layoutY="119.0" text="Pilih Jenis Transfer" />
+        <ImageView fitHeight="76.0" fitWidth="78.0" layoutX="191.0" layoutY="192.0">
+            <image>
+                <Image url="@gambar/antar.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="66.0" fitWidth="64.0" layoutX="46.0" layoutY="197.0">
+            <image>
+                <Image url="@gambar/back.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="43.0" layoutY="275.0" text="Sesama Bank" />
+        <Label layoutX="201.0" layoutY="275.0" text="Antar Bank" />
+        <Button fx:id="back_pay" layoutX="7.0" layoutY="9.0" mnemonicParsing="false" onAction="#back_pay" prefHeight="44.0" prefWidth="66.0" style="-fx-background-color: transaparant;">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+      <Button layoutX="19.0" layoutY="171.0" mnemonicParsing="false" onAction="#sesama" prefHeight="135.0" prefWidth="118.0" style="-fx-background-color: transparant;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="antar" layoutX="165.0" layoutY="185.0" mnemonicParsing="false" onAction="#antarbank" prefHeight="135.0" prefWidth="131.0" style="-fx-background-color: transparant;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+    </children>
+    <cursor>
+        <Cursor fx:constant="HAND" />
+    </cursor>
+</AnchorPane>

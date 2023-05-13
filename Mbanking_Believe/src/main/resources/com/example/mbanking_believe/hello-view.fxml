@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.HelloController">
+   <children>
+      <Label layoutX="85.0" layoutY="310.0" text="Melayani Kepercayaan Anda" />
+      <Label layoutX="213.0" layoutY="511.0" text="Selanjutnya --&gt;" />
+      <ImageView fitHeight="180.0" fitWidth="250.0" layoutX="35.0" layoutY="107.0">
+         <image>
+            <Image url="@gambar/logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="buttonNext" layoutX="187.0" layoutY="507.0" mnemonicParsing="false" onAction="#toLogin" prefHeight="25.0" prefWidth="124.0" style="-fx-background-color: transparant;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

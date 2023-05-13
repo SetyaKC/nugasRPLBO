@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.BerandaController">
+   <children>
+      <Line endX="100.0" startX="-100.0" />
+      <Button fx:id="ke" layoutX="23.0" layoutY="432.0" mnemonicParsing="false" onAction="#ke" prefHeight="25.0" prefWidth="275.0" text="Kembali Ke Beranda" />
+      <Label layoutX="19.0" layoutY="229.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="37.0" text="Transaksi Berhasil">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="140.0" text="Nomor ID Pelanggan" />
+      <Label layoutX="19.0" layoutY="167.0" text="Nama" />
+      <Label layoutX="19.0" layoutY="197.0" text="Kode Voucher" />
+      <Label layoutX="19.0" layoutY="224.0" text="Nominal Token" />
+      <Label layoutX="19.0" layoutY="255.0" text="Nomor Rekening" />
+      <Label layoutX="19.0" layoutY="282.0" text="Nominal" />
+      <Label layoutX="19.0" layoutY="314.0" text="Biaya Admin" />
+      <Label layoutX="19.0" layoutY="341.0" text="Total" />
+      <Label alignment="BOTTOM_RIGHT" contentDisplay="CENTER" layoutX="209.0" layoutY="140.0" text="001" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="209.0" layoutY="167.0" text="Setya Pamungkas" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="209.0" layoutY="197.0" text="888541053197" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="209.0" layoutY="224.0" text="Rp0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="209.0" layoutY="255.0" text="1223456" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="209.0" layoutY="282.0" text="Rp0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="209.0" layoutY="314.0" text="Rp0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="209.0" layoutY="341.0" text="Rp0" />
+      <Label layoutX="69.0" layoutY="63.0" text="STRUK PEMBELIAN VOUCHER TV" />
+   </children>
+</AnchorPane>

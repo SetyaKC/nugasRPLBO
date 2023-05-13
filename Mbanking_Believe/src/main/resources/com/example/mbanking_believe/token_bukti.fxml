@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mbanking_believe.BerandaController">
+   <children>
+      <AnchorPane layoutX="7.0" prefHeight="550.0" prefWidth="320.0">
+         <children>
+            <Line endX="100.0" layoutX="-10.0" layoutY="1.0" startX="-100.0" />
+            <Button fx:id="ber" layoutX="23.0" layoutY="459.0" mnemonicParsing="false" onAction="#ber" prefHeight="25.0" prefWidth="275.0" text="Kembali Ke Beranda" />
+            <Label layoutX="9.0" layoutY="230.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="36.0" fitWidth="68.0" layoutY="15.0">
+               <image>
+                  <Image url="@../../../../../../gambar/logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="94.0" layoutY="20.0" text="Transaksi Berhasil">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="138.0" text="Nomor ID Pelanggan" />
+            <Label layoutX="14.0" layoutY="165.0" text="Nama" />
+            <Label layoutX="14.0" layoutY="195.0" text="TarifDaya" />
+            <Label layoutX="14.0" layoutY="222.0" text="Nomor REF" />
+            <Label layoutX="14.0" layoutY="253.0" text="Nomor Rekening" />
+            <Label layoutX="14.0" layoutY="280.0" text="Nominal" />
+            <Label layoutX="14.0" layoutY="312.0" text="Biaya Admin" />
+            <Label layoutX="14.0" layoutY="339.0" text="Total" />
+            <Label alignment="BOTTOM_RIGHT" contentDisplay="CENTER" layoutX="204.0" layoutY="138.0" text="001" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="204.0" layoutY="165.0" text="Setya Pamungkas" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="204.0" layoutY="195.0" text="Rp0" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="204.0" layoutY="222.0" text="888541053197" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="204.0" layoutY="253.0" text="1223456" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="204.0" layoutY="280.0" text="Rp0" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="204.0" layoutY="312.0" text="Rp0" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="204.0" layoutY="339.0" text="Rp0" />
+            <Label layoutX="71.0" layoutY="51.0" text="STRUK PEMBELIAN TOKEN LISTRIK" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,11 @@
+.bg{
+    -fx-background-color: red;
+}
+
+.circle{
+    -fx-color:yellow;
+}
+
+#saldo-bg{
+    -fx-background-color: linear-gradient(to top,rgb(87, 132, 220),rgb(130, 181, 139));
+}
